@@ -1,0 +1,78 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo build:*)",
+      "Bash(cargo check:*)",
+      "Bash(cargo clippy:*)",
+      "Bash(cargo fmt:*)",
+      "Bash(cargo test:*)",
+      "Bash(cargo bench:*)",
+      "Bash(cargo doc:*)",
+      "Bash(cargo expand:*)",
+      "Bash(cargo tree:*)",
+      "Bash(cargo metadata:*)",
+      "Bash(cargo update:*)",
+      "Bash(cargo add:*)",
+      "Bash(cargo remove:*)",
+      "Bash(cargo nextest:*)",
+      "Bash(cargo run -p traceable-cli:*)",
+      "Bash(cargo run --bin traceable:*)",
+      "Bash(rustc --version)",
+      "Bash(rustup show:*)",
+
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git switch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git restore:*)",
+      "Bash(git stash:*)",
+      "Bash(git rebase:*)",
+      "Bash(git merge:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git tag:*)",
+
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(tree:*)",
+      "Bash(diff:*)",
+
+      "Read(./**)",
+      "Edit(./**)",
+      "Write(./**)"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(cargo publish:*)",
+      "Bash(cargo yank:*)",
+      "Bash(cargo dist publish:*)",
+      "Bash(rm -rf:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/secrets/**)",
+      "Read(./**/.ssh/**)"
+    ],
+    "ask": [
+      "Bash(cargo install:*)",
+      "Bash(rustup install:*)",
+      "Bash(rustup default:*)",
+      "Bash(cargo dist:*)"
+    ]
+  }
+}
